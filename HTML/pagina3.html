@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Seja um Jogador - Futebol</title>
+</head>
+<body>
+
+    <header>
+        <h1>Peneira Virtual</h1>
+        <p>Cadastre-se para a avaliação no nosso clube.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="codigo.html">Página Inicial</a></li>
+            <li><a href="pagina2.html">História e Copas</a></li>
+            <li><a href="pagina3.html">Seja um Jogador</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulário de Inscrição Avançado</h2>
+            <p>Preencha com seus dados reais para participar da próxima seleção.</p>
+
+            <form action="#" method="POST" enctype="multipart/form-data">
+                
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required><br><br>
+
+                    <label for="nascimento">Data de Nascimento:</label><br>
+                    <input type="date" id="nascimento" name="nascimento" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Habilidades e Posição</legend>
+                    
+                    <label for="posicao">Posição Preferida:</label><br>
+                    <input list="posicoes" id="posicao" name="posicao" placeholder="Escolha ou digite">
+                    <datalist id="posicoes">
+                        <option value="Goleiro">
+                        <option value="Zagueiro">
+                        <option value="Lateral">
+                        <option value="Meio-Campo">
+                        <option value="Atacante">
+                    </datalist><br><br>
+
+                    <label for="nivel">Nível de Habilidade (1 a 10):</label><br>
+                    <input type="range" id="nivel" name="nivel" min="1" max="10" step="1" value="5"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mídia do Atleta</legend>
+                    
+                    <label for="video-lances">Envie um vídeo com seus melhores lances (apenas .mp4):</label><br>
+                    <input type="file" id="video-lances" name="video-lances" accept="video/mp4" required><br><br>
+                </fieldset>
+
+                <button type="submit">Enviar Formulário</button>
+                <button type="reset">Limpar Dados</button>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Portal do Futebol</p>
+    </footer>
+
+</body>
+</html>
